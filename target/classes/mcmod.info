@@ -1,0 +1,18 @@
+[
+{
+  "modid": "SmtIRCord",
+  "name": "SmtIRCord",
+  "description": "Minecraft server, Discord, and IRC!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Smt_Redstoner"],
+  "credits": "Sprucians members",
+  "logoFile": "assets/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
+
+

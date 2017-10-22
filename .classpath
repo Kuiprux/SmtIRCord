@@ -6,7 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="java/|resources/" kind="src" path="src"/>
-	<classpathentry kind="src" path="libs"/>
 	<classpathentry kind="src" path="src/java"/>
 	<classpathentry kind="src" path="src/resources"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/1.7.10 Forge Files"/>
@@ -15,5 +14,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="libs/JDA-3.3.1_293-withDependencies.jar"/>
+	<classpathentry kind="lib" path="libs/pircbot.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

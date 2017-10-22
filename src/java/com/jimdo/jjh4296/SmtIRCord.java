@@ -21,7 +21,6 @@ public class SmtIRCord {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
-		System.out.println(System.getProperty("java.classpath"));
 		botHandler = new BotHandler();
 	}
 }

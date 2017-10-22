@@ -50,7 +50,7 @@ dependencies {
     sourceCompatibility = 1.7
     targetCompatibility = 1.7
 
-    embed name: 'JDA-3.3.1_DEV'
+    embed name: 'JDA-3.3.1_293-withDependencies'
     embed name: 'pircbot'
 }
 

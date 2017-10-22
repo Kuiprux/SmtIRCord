@@ -29,28 +29,33 @@ sourceSets {
     }
 }
 
-
 minecraft {
     version = "1.7.10-10.13.4.1558-1.7.10"
     runDir = "eclipse"
 }
 
-configurations{
-    customCompile
-}
-
 repositories {
     jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+configurations {
+    embed
+    compile.extendsFrom(embed)
 }
 
 dependencies {
     sourceCompatibility = 1.7
     targetCompatibility = 1.7
 
-    compile configurations.customCompile
-    compile 'net.dv8tion:JDA:3.3.1_291'
-    compile group: 'pircbot', name: 'pircbot', version: '1.5.0'
-    customCompile fileTree(dir: 'src/libs', include: ['*.jar'])
+    embed name: 'JDA-3.3.1_DEV'
+    embed name: 'pircbot'
+}
+
+jar {
+    from configurations.embed.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
 processResources

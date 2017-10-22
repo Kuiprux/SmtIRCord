@@ -1,7 +1,6 @@
 package com.jimdo.jjh4296.bots;
 
 import java.io.IOException;
-
 import org.jibble.pircbot.IrcException;
 import org.jibble.pircbot.PircBot;
 
